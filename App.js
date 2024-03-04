@@ -68,6 +68,7 @@ export default function App() {
         colors={[Colors.primary700, Colors.accent500]}
         style={styles.rootScreen}
       >
+        <Text>imgood</Text>
         <ImageBackground
           source={require('./assets/images/background.png')}
           resizeMode="cover"
