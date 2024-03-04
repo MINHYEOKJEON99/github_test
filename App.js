@@ -63,7 +63,7 @@ export default function App() {
   return (
     <>
       <StatusBar style="light" />
-      <Text>goodgood</Text>
+      <Text>goodgooddf</Text>
       <LinearGradient
         colors={[Colors.primary700, Colors.accent500]}
         style={styles.rootScreen}
