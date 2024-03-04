@@ -1,16 +1,16 @@
-import { useState } from "react";
-import { StyleSheet, ImageBackground, SafeAreaView } from "react-native";
-import { LinearGradient } from "expo-linear-gradient";
+import { useState } from 'react';
+import { StyleSheet, ImageBackground, SafeAreaView } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
 //글꼴작업을 위한 useFonts를 불러온다.
-import { useFonts } from "expo-font";
-import { StatusBar } from "expo-status-bar";
-import AppLoading from "expo-app-loading";
+import { useFonts } from 'expo-font';
+import { StatusBar } from 'expo-status-bar';
+import AppLoading from 'expo-app-loading';
 
-import StartGameScreen from "./screens/StartGameScreen";
-import GameScreen from "./screens/GameScreen";
-import GameOverScreen from "./screens/GameOverScreen";
+import StartGameScreen from './screens/StartGameScreen';
+import GameScreen from './screens/GameScreen';
+import GameOverScreen from './screens/GameOverScreen';
 
-import Colors from "./constants/colors";
+import Colors from './constants/colors';
 
 //LinearGradient는 선형그라데이션을 사용하는 컴포넌트
 //ImageBackground에 resizeMode는 화면이 크기와 안맞을때 이미지의 크기를 조정함
@@ -20,8 +20,8 @@ export default function App() {
   const [guessRounds, setGuessRounds] = useState(0);
 
   const [fontsLoaded] = useFonts({
-    "open-sans": require("./assets/fonts/OpenSans-Regular.ttf"),
-    "open-sans-bold": require("./assets/fonts/OpenSans-Bold.ttf"),
+    'open-sans': require('./assets/fonts/OpenSans-Regular.ttf'),
+    'open-sans-bold': require('./assets/fonts/OpenSans-Bold.ttf'),
   });
 
   if (!fontsLoaded) {
@@ -63,12 +63,13 @@ export default function App() {
   return (
     <>
       <StatusBar style="light" />
+      <Text>goodgood</Text>
       <LinearGradient
         colors={[Colors.primary700, Colors.accent500]}
         style={styles.rootScreen}
       >
         <ImageBackground
-          source={require("./assets/images/background.png")}
+          source={require('./assets/images/background.png')}
           resizeMode="cover"
           style={styles.rootScreen}
           imageStyle={styles.backgroundImage}
